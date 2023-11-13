@@ -1,42 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+#front {
+    font-size: 4em; /* Increased font size */
+    font-weight: bold;
+    text-align: center;
+    color: #edc22e; /* Prominent color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added text shadow for emphasis */
+    margin-top: 20px;
+}
+
+#score {
+    font-size: 1.5em;
+    text-align: center;
+    color: #776e65;
+    margin-top: 10px;
+}
+
+#scoreValue {
+    color: #8f7a66;
+}
+
+#newGamebutton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #8f7a66;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
 
 .game {
-    padding-left: 5vw;
-    padding-top: 10vh;
-    height: 40vh;
-    width: 20vw;
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    width: 300px;
+    margin: 0 auto;
 }
 
 .row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
 }
 
 .cell {
-    width: 5vw;
-    height: 10vh;
-    border: 5px solid #bbada0;
-    background: #d3cac1;
-    font-size: 30px;
-    font-family: 'Google Sans';
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    background-color: #ccc0b3;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-weight: 700;
-}
-.newGamebutton:hover{
-    background-color: #a08d7c;
-}
-.newGamebutton{
-    margin-top: 20px;
-    padding: 10px 15px;
-    font-size: 16px;
+    font-size: 1.5em;
     font-weight: bold;
-    background-color: #8f7a66;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    color: #776e65;
 }
